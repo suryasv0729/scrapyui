@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+.tab {
+  border: solid 2px rgb(184, 180, 180);
+  flex-grow: 1;
+  outline: none;
+  height: 30px;
+  width: 100px;
+  position: relative;
+}
+
+.active {
+  border-bottom: solid 2px blue;
+}
+
+.duplicate {
+  border-bottom: solid 3px red;
+}
+
+.unique {
+  border-bottom: solid 3px green;
+}
+.trash-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.tab:hover .trash-icon {
+  display: inline; /* Shows the icon when the tab is hovered */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  /* Initially hidden */
+  display: none;
+  gap: 20px;
+}
+
+.tick,
+.cross {
+  cursor: pointer;
+}
