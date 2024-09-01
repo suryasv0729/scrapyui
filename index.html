@@ -5,37 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="tabs-container">
-      <div class="tab">
-        Table 1 <span class="trash-icon">🗑️</span>
-        <div class="overlay">
-          <div class="tick">T</div>
-          <div class="cross">X</div>
+    <div class="main">
+      <div class="tabs-container">
+        <div class="tab active">
+          <div class="tab-text">Table 1</div>
+
+          <div class="trash-icon">🗑️</div>
+          <div class="overlay">
+            <div class="tick">✅</div>
+            <div class="cross">❌</div>
+          </div>
+        </div>
+        <div class="tab">
+          <div class="tab-text">Table 2</div>
+          <div class="trash-icon">🗑️</div>
+          <div class="overlay">
+            <div class="tick">✅</div>
+            <div class="cross">❌</div>
+          </div>
+        </div>
+        <div class="tab">
+          <div class="tab-text">Table 3</div>
+          <div class="trash-icon">🗑️</div>
+          <div class="overlay">
+            <div class="tick">✅</div>
+            <div class="cross">❌</div>
+          </div>
+        </div>
+        <div class="tab">
+          <div class="tab-text">Table 4</div>
+          <div class="trash-icon">🗑️</div>
+          <div class="overlay">
+            <div class="tick">✅</div>
+            <div class="cross">❌</div>
+          </div>
         </div>
       </div>
-      <div class="tab">
-        Table 2<span class="trash-icon">🗑️</span>
-        <div class="overlay">
-          <div class="tick">T</div>
-          <div class="cross">X</div>
-        </div>
-      </div>
-      <div class="tab">
-        Table 3<span class="trash-icon">🗑️</span>
-        <div class="overlay">
-          <div class="tick">T</div>
-          <div class="cross">X</div>
-        </div>
-      </div>
-      <div class="tab">
-        Table 4<span class="trash-icon">🗑️</span>
-        <div class="overlay">
-          <div class="tick">T</div>
-          <div class="cross">X</div>
-        </div>
-      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Column 1</th>
+            <th>Column 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Zoho CRM Overview</td>
+            <td>Gain a big-picture view of what Zoho CRM can do</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
   <script src="./script.js"></script>

@@ -3,31 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: #e8e8e8;
+  transition: all 0.3s ease;
+  font-family: "Google Sans", Roboto, arial, sans-serif;
+}
 .tabs-container {
   display: flex;
   gap: 20px;
   padding: 10px;
+  background-color: white;
+  cursor: pointer;
 }
 .tab {
-  border: solid 2px rgb(184, 180, 180);
-  flex-grow: 1;
+  border: none;
+
   outline: none;
   height: 30px;
-  width: 100px;
+  min-width: 80px;
   position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.tab-text {
+  outline: none;
+  border: none;
+  padding-right: 20px;
+  text-align: center;
+  padding-left: 10px;
 }
 
 .active {
-  border-bottom: solid 2px blue;
+  border: solid 1px rgb(234, 230, 230);
+  border-bottom: solid 3px rgb(174, 174, 177);
+  font-weight: 550;
+  border-radius: 5px;
 }
 
 .duplicate {
-  border-bottom: solid 3px red;
+  /* border-bottom: solid 3px red; */
+  color: red;
 }
 
 .unique {
-  border-bottom: solid 3px green;
+  /* border-bottom: solid 3px green; */
 }
 .trash-icon {
   display: none;
@@ -35,7 +56,7 @@
 }
 
 .tab:hover .trash-icon {
-  display: inline; /* Shows the icon when the tab is hovered */
+  display: inline;
 }
 
 .overlay {
@@ -44,13 +65,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red background */
+  background-color: rgb(255, 255, 255); 
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
-  /* Initially hidden */
+
   display: none;
   gap: 20px;
 }
@@ -58,4 +79,43 @@
 .tick,
 .cross {
   cursor: pointer;
+}
+
+.main {
+  height: 300px;
+
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #eaebf0; 
+  border: 1px solid #d3d3d3; 
+  text-align: left;
+}
+
+td {
+  border: 1px solid #d3d3d3; 
+  padding: 10px;
+  background-color: #ffffff; 
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 7%;
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 45%; 
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 45%;
 }
